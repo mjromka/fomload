@@ -11,6 +11,9 @@ cp .env.template .env
 
 ### Host only
 
+Generate links using separate (Meeting Links Generation)[https://github.com/timkishkin/meeting-links-generation]
+TODO: incorporate the logic into this project and create a task to generate links and save them in links.txt
+
 Wipe old data and push actual links to Redis
 
 ```sh
