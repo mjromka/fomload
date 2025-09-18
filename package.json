@@ -1,0 +1,18 @@
+{
+  "name": "fomload",
+  "version": "1.0.0",
+  "main": "test.js",
+  "scripts": {
+    "check": "dotenv -e .env k6 run src/check.js",
+    "refresh": "dotenv -e .env k6 run src/refresh.js",
+    "test": "dotenv -e .env k6 run src/test.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@types/k6": "^0.54.2",
+    "dotenv-cli": "^10.0.0"
+  }
+}
