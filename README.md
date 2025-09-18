@@ -28,7 +28,7 @@ pnpm test
 1. Log in to k6 cloud:
 
    ```sh
-   k6 cloud login --token <TOKEN>
+   k6 cloud login --token $(grep K6_CLOUD_TOKEN .env | cut -d '=' -f2)
    ```
 
 2. Run test
