@@ -38,7 +38,7 @@ async function openMeeting() {
 
   try {
     // take free URL
-    const client = new redis.Client(constants.REDIS_URL);
+    const client = new redis.Client(__ENV.REDIS_URL);
     let url = await client.lpop(constants.REDIS_LIST_NAME);
     console.log("👨‍💻 ~ url taken: " + url);
 
